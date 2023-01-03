@@ -1,0 +1,41 @@
+css:
+              &:hover{
+                > a {
+                  color: $brand-1;
+                  transition: color $default-transition;
+                }
+                .sub-menu{
+                    display: flex;
+                }
+              }
+              .sub-menu{
+                  position: absolute;
+                  list-style-type: none;
+                  flex-direction: column;
+                  display: none;
+                  background-color: $black-1;
+                  padding: $size-xxm;
+                  transform: translateX(-$size-xxm);
+                  li:not(:last-of-type){
+                    margin-bottom: $size-m;
+                  }
+              }
+html partial:
+          {{ if .HasChildren }}
+          <span for="{{ .Name }}">▾</span>
+          <ul class="sub-menu">
+              {{ range .Children }}
+              <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
+                  <a href="{{ .URL }}">{{ .Name }}</a >
+              </li>
+              {{ end }}
+          </ul>
+         {{ end }}
+
+config.toml
+  [[menu.main]]
+    identifier = "newidentifier"
+    name = "Name"
+    url = "/biggeridentifier/newidentifier"
+    parent = "biggeridentifier"
+    weight = x

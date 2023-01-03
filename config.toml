@@ -2,47 +2,17 @@ title = "Website Title"
 
 [menu]
   [[menu.main]]
-    identifier = "category"
-    name = "Category"
-    url = "/category"
-    weight = 2
-  [[menu.main]]
-    identifier = "category1"
-    name = "Category1"
-    url = "/category/category1"
-    parent = "category"
+    identifier = "oevelser"
+    name = "Øvelser"
+    url = "/oevelser"
     weight = 1
   [[menu.main]]
-    identifier = "category2"
-    name = "Category2"
-    url = "/category/category2"
-    parent = "category"
+    identifier = "programmer"
+    name = "Programmer"
+    url = "/programmer"
     weight = 2
   [[menu.main]]
-    identifier = "category3"
-    name = "Category3"
-    url = "/category/category3"
-    parent = "category"
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
     weight = 3
-  [[menu.main]]
-    identifier = "another-category"
-    name = "Another Category"
-    url = "/another-category"
-    weight = 3
-  [[menu.main]]
-    identifier = "another-category1"
-    name = "Another Category1"
-    url = "/another-category/another-category1"
-    parent = "another-category"
-    weight = 1
-  [[menu.main]]
-    identifier = "another-category2"
-    name = "Another Category2"
-    url = "/another-category/another-category2"
-    parent = "another-category"
-    weight = 2
-  [[menu.main]]
-    identifier = "about"
-    name = "About Us"
-    url = "/about/"
-    weight = 4

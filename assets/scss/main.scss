@@ -1,29 +1,58 @@
-/* LAYOUT */
-@import "imports/header.scss";
+@import
+"imports/colors.scss",
+"imports/sizes.scss",
+"imports/transitions.scss",
+"imports/font.scss",
+"imports/resets.scss";
 
 body {
-  color: #333;
-  font-size: 125%;
-  line-height: 1.5;
-  max-width: 45rem;
-  padding: 1rem;
-  margin: 0 auto;
+  color: $white-2;
+  background-color: $black-2;
+}
+
+#site-header{
+  background-color: $black-1;
+  nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: $size-l;
+      #lettermark{
+        font-weight: 800;
+        font-size: $size-l;
+      }
+      .menu{
+          display: flex;
+          gap: 1rem;
+          list-style-type: none;
+          font-size: $size-xm;
+          li{
+              a{
+                transition: color $default-transition;
+              }
+              &:hover{
+                a {
+                  color: $brand-1;
+                  transition: color $default-transition;
+                }
+              }
+          }
+      }
+  }
 }
 
 .post-title {
   margin-bottom: 1rem;
 }
-
 .post-date {
   display: block;
   margin-bottom: 2rem;
   font-style: italic;
 }
-
 .content {
   margin-bottom: 2rem;
 }
 
 img {
   max-width: 100%;
-}/*# sourceMappingURL=main.css.map */
+}
