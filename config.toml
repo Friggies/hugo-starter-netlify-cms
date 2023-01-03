@@ -2,17 +2,13 @@ title = "FRIGGIES"
 
 [menu]
   [[menu.main]]
-    identifier = "oevelser"
-    name = "Øvelser"
-    url = "/oevelser"
-    weight = 1
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts"
+    weight = 10
+
   [[menu.main]]
-    identifier = "programmer"
-    name = "Programmer"
-    url = "/programmer"
-    weight = 2
-  [[menu.main]]
-    identifier = "blog"
-    name = "Blog"
-    url = "/blog/"
-    weight = 3
+    identifier = "about"
+    name = "About"
+    url = "/about"
+    weight = 20
