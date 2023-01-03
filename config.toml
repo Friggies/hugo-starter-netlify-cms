@@ -2,11 +2,6 @@ title = "Website Title"
 
 [menu]
   [[menu.main]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-    weight = 1
-  [[menu.main]]
     identifier = "category"
     name = "Category"
     url = "/category"
@@ -14,19 +9,19 @@ title = "Website Title"
   [[menu.main]]
     identifier = "category1"
     name = "Category1"
-    url = "/tags/category1"
+    url = "/category/category1"
     parent = "category"
     weight = 1
   [[menu.main]]
     identifier = "category2"
     name = "Category2"
-    url = "/tags/category2"
+    url = "/category/category2"
     parent = "category"
     weight = 2
   [[menu.main]]
     identifier = "category3"
     name = "Category3"
-    url = "/tags/category3"
+    url = "/category/category3"
     parent = "category"
     weight = 3
   [[menu.main]]
@@ -37,13 +32,13 @@ title = "Website Title"
   [[menu.main]]
     identifier = "another-category1"
     name = "Another Category1"
-    url = "/tags/another-category1"
+    url = "/another-category/another-category1"
     parent = "another-category"
     weight = 1
   [[menu.main]]
     identifier = "another-category2"
     name = "Another Category2"
-    url = "/tags/another-category2"
+    url = "/another-category/another-category2"
     parent = "another-category"
     weight = 2
   [[menu.main]]

@@ -1,0 +1,40 @@
+/* LAYOUT */
+#site-header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  #site-header nav .menu {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none; }
+    #site-header nav .menu li:hover .sub-menu {
+      display: flex; }
+    #site-header nav .menu li .sub-menu {
+      position: absolute;
+      list-style-type: none;
+      flex-direction: column;
+      display: none; }
+
+body {
+  color: #333;
+  font-size: 125%;
+  line-height: 1.5;
+  max-width: 45rem;
+  padding: 1rem;
+  margin: 0 auto; }
+
+.post-title {
+  margin-bottom: 1rem; }
+
+.post-date {
+  display: block;
+  margin-bottom: 2rem;
+  font-style: italic; }
+
+.content {
+  margin-bottom: 2rem; }
+
+img {
+  max-width: 100%; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,6 +1,5 @@
 /* LAYOUT */
-
-@import url(imports/header.scss);
+@import "imports/header.scss";
 
 body {
   color: #333;
@@ -9,7 +8,6 @@ body {
   max-width: 45rem;
   padding: 1rem;
   margin: 0 auto;
-  background-color: red;
 }
 
 .post-title {
@@ -28,4 +26,4 @@ body {
 
 img {
   max-width: 100%;
-}
+}/*# sourceMappingURL=main.css.map */

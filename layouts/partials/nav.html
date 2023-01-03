@@ -7,7 +7,7 @@
     <ul class="menu">
       {{ range .Site.Menus.main }}
       <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
-          <a href="{{ .URL }}">{{ .Name }}</span>
+          <a href="{{ .URL }}">{{ .Name }}</a>
           {{ if .HasChildren }}
           <span for="{{ .Name }}">▾</span>
           <ul class="sub-menu">
