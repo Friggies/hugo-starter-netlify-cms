@@ -3,6 +3,22 @@
     <a class="logo" href="/">
       {{ .Site.Title }}
     </a>
-    {{ partial "menu.html" . }}
+    <ul class="main-menu">
+      {{ range.Site.Menus.main }}
+      <li>
+        <a href="{{ .URL }}">{{ .Name }}</a>
+        {{ if .HasChildren }}
+        <span class="drop-icon" for="{{ .Name }}">▾</span>
+        <ul class="sub-menu">
+            {{ range .Children }}
+            <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
+                <span>{{ .Name }}</span>
+            </li>
+            {{ end }}
+        </ul>
+       {{ end }}
+      </li>
+      {{ end }}
+    </ul>
   </nav>
 </header>
