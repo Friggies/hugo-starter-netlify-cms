@@ -3,12 +3,6 @@
     <a class="logo" href="/">
       {{ .Site.Title }}
     </a>
-    <ul class="main-menu">
-      {{ range.Site.Menus.main }}
-      <li>
-        <a href="{{ .URL }}">{{ .Name }}</a>
-      </li>
-      {{ end }}
-    </ul>
+    {{ partial "menu.html" . }}
   </nav>
 </header>

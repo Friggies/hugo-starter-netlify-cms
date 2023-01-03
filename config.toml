@@ -1,14 +1,28 @@
-title = "My New Hugo Site"
+title = "Website Title"
 
 [menu]
   [[menu.main]]
-    identifier = "posts"
-    name = "Posts"
-    url = "/posts"
-    weight = 10
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog"
+    weight = 20
 
   [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about"
-    weight = 20
+    identifier = "traening"
+    name = "Træning"
+    url = "/traening"
+    weight = 10
+  
+    [[menu.main]]
+    identifier = "oevelser"
+    name = "Øvelser"
+    url = "/traening/oevelser"
+    parent = "traening"
+    weight = 10
+
+    [[menu.main]]
+    identifier = "programmer"
+    name = "Programmer"
+    url = "/traening/programmer"
+    parent = "traening"
+    weight = 10
