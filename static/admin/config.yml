@@ -14,6 +14,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Latest Revision", name: "revision", widget: "datetime" }
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "oevelserposts" # Used in routes, e.g., /admin/collections/post
@@ -26,6 +27,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Latest Revision", name: "revision", widget: "datetime" }
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "programmerposts" # Used in routes, e.g., /admin/collections/post
@@ -38,13 +40,14 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Latest Revision", name: "revision", widget: "datetime" }
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "pages"
     label: "Sider"
     files:
       - file: "content/_index.md"
-        label: "Home Page"
+        label: "Startside"
         name: "home"
         fields:
           - { label: "Title", name: "title", widget: "string" }
@@ -59,9 +62,21 @@ collections:
                   { label: "Text", name: "text", widget: "text" },
                 ],
             }
-      - file: "content/about/index.md"
-        label: "About"
-        name: "about"
+      - file: "content/programmer/index.md"
+        label: "Programmer"
+        name: "programmer"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "text" }
+      - file: "content/oevelser/index.md"
+        label: "Øvelser"
+        name: "oevelser"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "text" }
+      - file: "content/blog/index.md"
+        label: "Blog"
+        name: "blog"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "text" }
