@@ -1,0 +1,20 @@
+#site-header{
+    nav{
+        .menu{
+            display: flex;
+            list-style-type: none;
+            li{
+                &:hover{
+                    .sub-menu{
+                        display: flex;
+                    }
+                }
+                .sub-menu{
+                    list-style-type: none;
+                    flex-direction: column;
+                    display: none;
+                }
+            }
+        }
+    }
+}
