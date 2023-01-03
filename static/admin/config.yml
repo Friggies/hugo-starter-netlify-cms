@@ -62,19 +62,19 @@ collections:
                   { label: "Text", name: "text", widget: "text" },
                 ],
             }
-      - file: "content/programmer/index.md"
+      - file: "content/programmer/_index.md"
         label: "Programmer"
         name: "programmer"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "text" }
-      - file: "content/oevelser/index.md"
+      - file: "content/oevelser/_index.md"
         label: "Øvelser"
         name: "oevelser"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "text" }
-      - file: "content/blog/index.md"
+      - file: "content/blog/_index.md"
         label: "Blog"
         name: "blog"
         fields:
