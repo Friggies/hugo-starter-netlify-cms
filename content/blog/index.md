@@ -1,4 +1,4 @@
 ---
 title: Bloggen
 ---
-Hej
+Velkommen til bloggen
