@@ -46,7 +46,7 @@ collections:
   - name: "pages"
     label: "Sider"
     files:
-      - file: "content/_index.md"
+      - file: "content/index.md"
         label: "Startside"
         name: "home"
         fields:
@@ -62,19 +62,19 @@ collections:
                   { label: "Text", name: "text", widget: "text" },
                 ],
             }
-      - file: "content/programmer/_index.md"
+      - file: "content/programmer/index.md"
         label: "Programmer"
         name: "programmer"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "text" }
-      - file: "content/oevelser/_index.md"
+      - file: "content/oevelser/index.md"
         label: "Øvelser"
         name: "oevelser"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "text" }
-      - file: "content/blog/_index.md"
+      - file: "content/blog/index.md"
         label: "Blog"
         name: "blog"
         fields:
