@@ -46,7 +46,7 @@ collections:
   - name: "pages"
     label: "Sider"
     files:
-      - file: "content/index.md"
+      - file: "content/_index.md"
         label: "Startside"
         name: "home"
         fields:
