@@ -6,13 +6,19 @@
 	
 		<h1 class="post-title">{{ .Title }}</h1>
 
-		<div class="post-info">Af {{ .Params.Author }}, {{ .PublishDate.Format "January 2006" }}</div>
+		<div class="post-info">
+			
+			<p>Skrevet af {{ .Params.Author }}</p>
+			
+			{{ if eq .PublishDate .Lastmod }}
+				<p>Publiceret i <span class="lowercase">{{ .PublishDate.Format "January 2006" }}</span></p>
+			{{ else }}
+				<p>Sidst revideret i <span class="lowercase">{{ .Lastmod.Format "January 2006" }}</span></p>
+			{{ end }}
 
-		{{ if ne .PublishDate .Lastmod }}
-		<div class="post-info">Sidst revideret: {{ .Lastmod.Format "January 2006" }}</div>
-		{{ end }}
+			<p>Anslået læsetid: {{ math.Round (div (countwords .Content) 180.0) }} minutter</p>
 
-		<div class="post-info">Anslået læsetid: {{ math.Round (div (countwords .Content) 180.0) }} minutter</div>
+		</div>
 
 		{{ if .Params.image }}
 			<img src="{{ .Params.image }}" class="post-image">
