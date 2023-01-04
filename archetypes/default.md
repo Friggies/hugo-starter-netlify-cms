@@ -1,4 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
+publishdate: {{ .Date }}
+autor: "Frej Dahl"
+lastmod: {{ .Date }}
 ---

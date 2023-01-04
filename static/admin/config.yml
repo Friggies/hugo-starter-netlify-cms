@@ -14,6 +14,8 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Last Modified", name: "lastmod", widget: "datetime" }
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "pages"

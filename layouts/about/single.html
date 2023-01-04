@@ -1,0 +1,13 @@
+{{ partial "header.html" . }}
+
+<h1 class="post-title">{{ .Title }}</h1>
+
+<p>HEJHEJHEJ</p>
+
+{{ if .Params.image }}
+	<img src="{{ .Params.image }}" >
+{{ end }}
+
+{{ .Content }}
+
+{{ partial "footer.html" . }}
