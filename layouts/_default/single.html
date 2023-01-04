@@ -10,7 +10,7 @@
 			
 			<p>Skrevet af {{ .Params.Author }}</p>
 			
-			{{ if eq .PublishDate .Lastmod }}
+			{{ if eq (.PublishDate.Format "2006-01-02") (.Lastmod.Format "2006-01-02") }}
 				<p>Publiceret i <span class="lowercase">{{ .PublishDate.Format "January 2006" }}</span></p>
 			{{ else }}
 				<p>Sidst revideret i <span class="lowercase">{{ .Lastmod.Format "January 2006" }}</span></p>
