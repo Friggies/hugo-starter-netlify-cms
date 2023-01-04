@@ -13,7 +13,8 @@ h1, h2, h3, h4, h5, h6 {
 * {
   padding: 0;
   margin: 0;
-  border: 0; }
+  border: 0;
+  box-sizing: border-box; }
 
 a, button {
   color: inherit;
@@ -44,19 +45,36 @@ body {
       #site-header nav .menu li a {
         transition: color 200ms ease; }
       #site-header nav .menu li:hover a {
-        color: #c60;
+        color: #F60;
         transition: color 200ms ease; }
 
-.post-title {
-  margin-bottom: 1rem; }
-
-.post-date {
-  display: block;
-  margin-bottom: 2rem;
-  font-style: italic; }
-
-.content {
+.post .post-header {
+  min-height: 200px;
+  position: relative;
+  padding: 2rem;
   margin-bottom: 2rem; }
+  .post .post-header .post-title {
+    font-size: 3rem;
+    color: #F60; }
+  .post .post-header .post-info {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #e6e6e6; }
+  .post .post-header .post-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    object-position: center;
+    filter: grayscale(1) blur(2px) brightness(0.5); }
+
+.post .post-content {
+  padding: 0 2rem; }
+  .post .post-content p:not(:last-of-type) {
+    margin-bottom: 1rem; }
 
 img {
   max-width: 100%; }

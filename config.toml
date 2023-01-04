@@ -6,7 +6,6 @@ title = "FRIGGIES"
     name = "Posts"
     url = "/posts"
     weight = 10
-
   [[menu.main]]
     identifier = "about"
     name = "About"

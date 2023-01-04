@@ -41,16 +41,39 @@ body {
   }
 }
 
-.post-title {
-  margin-bottom: 1rem;
-}
-.post-date {
-  display: block;
-  margin-bottom: 2rem;
-  font-style: italic;
-}
-.content {
-  margin-bottom: 2rem;
+.post{
+  .post-header{
+    min-height: 200px;
+    position: relative;
+    padding: $size-l;
+    margin-bottom: $size-l;
+    .post-title{
+      font-size: $size-xl;
+      color: $brand-1;
+    }
+    .post-info{
+      font-size: $size-xm;
+      font-style: italic;
+      color: $white-3;
+    }
+    .post-image{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      object-fit: cover;
+      object-position: center;
+      filter: grayscale(1) blur(2px) brightness(0.5);
+    }
+  }
+  .post-content{
+    padding: 0 $size-l;
+    p:not(:last-of-type){
+      margin-bottom: $size-m
+    }
+  }
 }
 
 img {
