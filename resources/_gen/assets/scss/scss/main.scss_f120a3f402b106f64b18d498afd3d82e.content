@@ -2,13 +2,17 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600; }
+
 #site-header {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600; }
+.cta-primary {
+  font-family: 'Montserrat' sans-serif;
+  font-weight: 400; }
 
 * {
   padding: 0;
@@ -26,6 +30,12 @@ a, button {
 body {
   color: #f2f2f2;
   background-color: #0d0d0d; }
+
+.cta-primary {
+  background-color: #F60;
+  width: fit-content;
+  padding: 0.4rem 1rem;
+  text-transform: uppercase; }
 
 #site-header {
   background-color: black; }
@@ -81,10 +91,41 @@ body {
       z-index: -1;
       object-fit: cover;
       object-position: center;
-      filter: grayscale(1) blur(2px) brightness(0.5); }
+      filter: grayscale(1) brightness(0.5) blur(2.5px); }
   .post .post-content {
     padding: 2rem;
     max-width: 70%;
     margin: auto; }
     .post .post-content p:not(:last-of-type) {
       margin-bottom: 1rem; }
+
+.post-snippet {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .post-snippet .post-snippet-content {
+    background-color: #1a1a1a;
+    padding: 2rem 3rem;
+    display: block; }
+    .post-snippet .post-snippet-content h3 {
+      color: #F60;
+      font-size: 1.4rem; }
+    .post-snippet .post-snippet-content .post-snippet-content-button {
+      margin-top: 1rem; }
+  .post-snippet .post-snippet-image {
+    width: 30%;
+    filter: grayscale(1) brightness(0.5);
+    aspect-ratio: 2;
+    object-fit: cover; }
+  .post-snippet:nth-child(even) {
+    flex-direction: row-reverse; }
+    .post-snippet:nth-child(even) .post-snippet-content {
+      border-left: 2px solid #F60;
+      box-shadow: inset 25px 0 25px -25px #F60; }
+  .post-snippet:nth-child(odd) {
+    flex-direction: row; }
+    .post-snippet:nth-child(odd) .post-snippet-content {
+      border-right: 2px solid #F60;
+      box-shadow: inset -25px 0 25px -25px #F60; }
+  .post-snippet:not(:last-of-type) {
+    margin-bottom: 2rem; }

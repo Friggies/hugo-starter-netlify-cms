@@ -3,11 +3,19 @@
 "imports/sizes.scss",
 "imports/transitions.scss",
 "imports/font.scss",
+"imports/filters.scss",
 "imports/resets.scss";
 
 body {
   color: $white-2;
   background-color: $black-2;
+}
+
+.cta-primary{
+  background-color: $brand-1;
+  width: fit-content;
+  padding: $size-xxs $size-m;
+  text-transform: uppercase;
 }
 
 #site-header{
@@ -77,7 +85,7 @@ body {
       z-index: -1;
       object-fit: cover;
       object-position: center;
-      filter: grayscale(1) blur(2px) brightness(0.5);
+      filter: $dark-filter $blur-filter;
     }
   }
   .post-content{
@@ -87,5 +95,45 @@ body {
     p:not(:last-of-type){
       margin-bottom: $size-m;
     }
+  }
+}
+.post-snippet{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .post-snippet-content{
+    background-color: $black-3;
+    padding: $size-l $size-xl;
+    display: block;
+    h3{
+      color: $brand-1;
+      font-size: $size-xxm;
+    }
+    .post-snippet-content-button{
+      margin-top: $size-m;
+    }
+  }
+  .post-snippet-image{
+    width: 30%;
+    filter: $dark-filter;
+    aspect-ratio: 2;
+    object-fit: cover;
+  }
+  &:nth-child(even){
+    flex-direction: row-reverse;
+    .post-snippet-content{
+      border-left: 2px solid $brand-1;
+      box-shadow: inset 25px 0 25px -25px $brand-1;
+    }
+  }
+  &:nth-child(odd){
+    flex-direction: row;
+    .post-snippet-content{
+      border-right: 2px solid $brand-1;
+      box-shadow: inset -25px 0 25px -25px $brand-1;
+    }
+  }
+  &:not(:last-of-type){
+    margin-bottom: $size-l;
   }
 }
