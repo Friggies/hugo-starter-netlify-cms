@@ -4,7 +4,7 @@
 
 <span class="post-date">Udgivet: {{ .PublishDate.Format "January 2006" }}</span>
 <span class="post-date">Sidst ændret: {{ .Lastmod.Format "January 2006" }}</span>
-<span class="post-date">Af {{ .Author }}</span>
+<span class="post-date">Af {{ .Params.Author }}</span>
 
 {{ if .Params.image }}
 	<img src="{{ .Params.image }}" >
