@@ -133,20 +133,22 @@ body {
 
 @media screen and (max-width: 800px) {
   #site-header nav {
-    padding: 1rem 2rem; }
+    padding: 1rem 1.2rem; }
     #site-header nav #lettermark {
       font-size: 1.4rem; }
     #site-header nav .menu {
       font-size: 1rem; }
   #site-footer {
-    padding: 1rem 2rem; }
-  .post .post-header .post-title {
-    font-size: 2rem; }
+    padding: 1rem 1.2rem; }
+  .post .post-header {
+    padding-left: 1.2rem; }
+    .post .post-header .post-title {
+      font-size: 2rem; }
   .post .post-content {
-    padding: 1rem 2rem;
+    padding: 1rem 1.2rem;
     max-width: 100%; }
   .post-snippet {
-    padding: 2rem 2rem 0 2rem; }
+    padding: 2rem 1.2rem 0 1.2rem; }
     .post-snippet:nth-child(even) {
       flex-direction: column-reverse; }
       .post-snippet:nth-child(even) .post-snippet-content {
@@ -161,7 +163,7 @@ body {
       max-width: 100%;
       width: 100%;
       border-top: 2px solid #F60;
-      padding: 2rem 1rem; }
+      padding: 1.2rem; }
     .post-snippet .post-snippet-image {
       width: 100%;
       height: 150px; } }

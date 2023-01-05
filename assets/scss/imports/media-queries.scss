@@ -1,7 +1,7 @@
 @media screen and (max-width:800px) {
     #site-header{
         nav{
-            padding: $size-m $size-l;
+            padding: $size-m $size-xm;
             #lettermark{
               font-size: $size-xxm;
             }
@@ -11,21 +11,22 @@
         }
       }
       #site-footer{
-        padding: $size-m $size-l;
+        padding: $size-m $size-xm;
       }
     .post{
       .post-header{
+        padding-left: $size-xm;
         .post-title{
           font-size: $size-l;
         }
       }
         .post-content{
-          padding: $size-m $size-l;
+          padding: $size-m $size-xm;
           max-width: 100%;
         }
       }
     .post-snippet{
-      padding: $size-l $size-l 0 $size-l;
+      padding: $size-l $size-xm 0 $size-xm;
         &:nth-child(even){
             flex-direction: column-reverse;
             .post-snippet-content{
@@ -44,7 +45,7 @@
             max-width: 100%;
             width: 100%;
             border-top: 2px solid $brand-1;
-            padding: $size-l $size-m;
+            padding: $size-xm;
           }
         .post-snippet-image{
             width: 100%;
