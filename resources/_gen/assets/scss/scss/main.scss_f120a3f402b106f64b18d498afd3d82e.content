@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600; }
 
 .cta-primary {
-  font-family: 'Montserrat' sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400; }
 
 * {
@@ -32,10 +32,11 @@ body {
   background-color: #0d0d0d; }
 
 .cta-primary {
-  background-color: #F60;
+  background-color: #262626;
   width: fit-content;
   padding: 0.4rem 1rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin: auto; }
 
 #site-header {
   background-color: black; }
@@ -106,7 +107,8 @@ body {
   .post-snippet .post-snippet-content {
     background-color: #1a1a1a;
     padding: 2rem 3rem;
-    display: block; }
+    display: block;
+    max-width: 50%; }
     .post-snippet .post-snippet-content h3 {
       color: #F60;
       font-size: 1.4rem; }
