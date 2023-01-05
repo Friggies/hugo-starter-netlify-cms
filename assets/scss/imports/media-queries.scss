@@ -10,12 +10,22 @@
             }
         }
       }
+      #site-footer{
+        padding: $size-m $size-l;
+      }
     .post{
+      .post-header{
+        .post-title{
+          font-size: $size-l;
+        }
+      }
         .post-content{
+          padding: $size-m $size-l;
           max-width: 100%;
         }
       }
     .post-snippet{
+      padding: $size-l $size-l 0 $size-l;
         &:nth-child(even){
             flex-direction: column-reverse;
             .post-snippet-content{
@@ -31,12 +41,12 @@
             }
         }
         .post-snippet-content{
-            max-width: 80%;
-            width: 80%;
+            max-width: 100%;
+            width: 100%;
             border-top: 2px solid $brand-1;
           }
         .post-snippet-image{
-            width: 80%;
+            width: 100%;
             height: 150px;
         }
     }

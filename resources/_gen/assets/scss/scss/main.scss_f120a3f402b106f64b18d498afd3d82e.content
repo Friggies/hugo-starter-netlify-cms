@@ -138,22 +138,29 @@ body {
       font-size: 1.4rem; }
     #site-header nav .menu {
       font-size: 1rem; }
+  #site-footer {
+    padding: 1rem 2rem; }
+  .post .post-header .post-title {
+    font-size: 2rem; }
   .post .post-content {
+    padding: 1rem 2rem;
     max-width: 100%; }
-  .post-snippet:nth-child(even) {
-    flex-direction: column-reverse; }
-    .post-snippet:nth-child(even) .post-snippet-content {
-      border-left: none;
-      box-shadow: inset 0 25px 25px -25px #F60; }
-  .post-snippet:nth-child(odd) {
-    flex-direction: column-reverse; }
-    .post-snippet:nth-child(odd) .post-snippet-content {
-      border-right: none;
-      box-shadow: inset 0 25px 25px -25px #F60; }
-  .post-snippet .post-snippet-content {
-    max-width: 80%;
-    width: 80%;
-    border-top: 2px solid #F60; }
-  .post-snippet .post-snippet-image {
-    width: 80%;
-    height: 150px; } }
+  .post-snippet {
+    padding: 2rem 2rem 0 2rem; }
+    .post-snippet:nth-child(even) {
+      flex-direction: column-reverse; }
+      .post-snippet:nth-child(even) .post-snippet-content {
+        border-left: none;
+        box-shadow: inset 0 25px 25px -25px #F60; }
+    .post-snippet:nth-child(odd) {
+      flex-direction: column-reverse; }
+      .post-snippet:nth-child(odd) .post-snippet-content {
+        border-right: none;
+        box-shadow: inset 0 25px 25px -25px #F60; }
+    .post-snippet .post-snippet-content {
+      max-width: 100%;
+      width: 100%;
+      border-top: 2px solid #F60; }
+    .post-snippet .post-snippet-image {
+      width: 100%;
+      height: 150px; } }
