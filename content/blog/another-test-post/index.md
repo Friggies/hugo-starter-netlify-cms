@@ -1,4 +1,5 @@
 ---
+visible: true
 title: Another test post
 date: 2023-01-04T14:55:59.410Z
 author: Frej Dahl Linneke

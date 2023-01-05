@@ -1,4 +1,5 @@
 ---
+visible: true
 title: Last test post
 date: 2023-01-04T20:34:18.737Z
 author: John Doe
