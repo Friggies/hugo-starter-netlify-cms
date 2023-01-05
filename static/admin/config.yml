@@ -19,6 +19,7 @@ collections:
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Last Modified", name: "lastmod", widget: "datetime" }
       - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Preview text", name: "preview", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "pages"
     label: "Pages"

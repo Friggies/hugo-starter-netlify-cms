@@ -5,6 +5,7 @@ date: 2023-01-04T14:55:59.410Z
 author: Frej Dahl Linneke
 lastmod: 2023-01-04T14:55:58.548Z
 image: https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80
+preview: lorem
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec nunc in leo eleifend sodales. Integer vel massa diam. Nunc mauris mi, venenatis in efficitur ac, ultricies non eros. Maecenas congue nulla id tincidunt sodales. Fusce aliquet nunc in malesuada condimentum. Ut placerat urna ac nibh mattis vestibulum. Nam rhoncus in quam a aliquet. Quisque vel est nulla. Pellentesque consectetur sed nibh a elementum.
 
