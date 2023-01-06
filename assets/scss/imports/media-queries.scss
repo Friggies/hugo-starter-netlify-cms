@@ -26,30 +26,36 @@
         }
       }
     .post-snippet{
-      padding: $size-l $size-xm 0 $size-xm;
+      padding: 0 $size-xm;
+      position: relative;
         &:nth-child(even){
             flex-direction: column-reverse;
             .post-snippet-content{
                 border-left: none;
-                box-shadow: inset 0 25px 25px -25px $brand-1;;      
+                box-shadow: none;      
             }
           }
         &:nth-child(odd){
             flex-direction: column-reverse;
         .post-snippet-content{
                 border-right: none;
-                box-shadow: inset 0 25px 25px -25px $brand-1;;      
+                box-shadow: none;      
             }
         }
         .post-snippet-content{
             max-width: 100%;
             width: 100%;
-            border-top: 2px solid $brand-1;
             padding: $size-xm;
+          }
+          .post-snippet-image-overlay{
+            display: block;
           }
         .post-snippet-image{
             width: 100%;
             height: 150px;
+        }
+        &:not(:last-of-type){
+          margin-bottom: $size-xm;
         }
     }
 }

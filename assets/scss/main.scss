@@ -101,6 +101,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   .post-snippet-content{
     background-color: $black-3;
     padding: $size-l $size-xl;
@@ -112,6 +113,17 @@ body {
     .post-snippet-content-button{
       margin-top: $size-m;
     }
+  }
+  .post-snippet-image-overlay{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, transparent 80%, darken($brand-1, 30) 99%);
+    border-bottom: 2px solid $brand-1;
+    width: calc(100% - 2.4rem);
+    height: 150px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    display: none;
   }
   .post-snippet-image{
     width: 30%;
