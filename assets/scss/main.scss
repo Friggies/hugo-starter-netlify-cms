@@ -10,6 +10,9 @@ body {
   color: $white-2;
   background-color: $black-2;
 }
+main{
+  min-height: calc(100vh - 60px)
+}
 
 .cta-primary{
   background-color: $black-4;
@@ -50,6 +53,7 @@ body {
 }
 #site-footer{
   padding: $size-l;
+  background-color: $black-1;
 }
 
 .post{
