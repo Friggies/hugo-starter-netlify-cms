@@ -13,10 +13,10 @@ collections:
     filter: {field: "visible", value: true}
     create: true # Allow users to create new documents in this collection
     fields: # The fields for each document, usually in front matter
-      - {label: "Visible", name: "visible", widget: hidden, default: true}
+      - { label: "Visible", name: "visible", widget: hidden, default: true}
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Author", name: "author", widget: "select", options: ["Frej Dahl Linneke"], default: ["Frej Dahl Linneke"] }
       - { label: "Last Modified", name: "lastmod", widget: "datetime" }
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Preview text", name: "preview", widget: "text" }
