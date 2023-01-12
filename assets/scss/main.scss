@@ -6,12 +6,12 @@
 "imports/filters.scss",
 "imports/resets.scss";
 
+:root{
+  scroll-behavior: smooth;
+}
 body {
   color: $white-2;
   background-color: $black-2;
-}
-main{
-  min-height: calc(100vh - 60px)
 }
 
 .cta-primary{
@@ -96,8 +96,26 @@ main{
     padding: $size-l;
     max-width: 70%;
     margin: auto;
+    .content-overview{
+      color: $white-5;
+      #title-overview{
+        list-style: none;
+        margin-bottom: $size-m;
+        li{
+          a{
+            text-decoration: underline;
+          }
+          &:not(:last-of-type){
+            margin-bottom: $size-xxxs;
+          }
+        }
+      }
+    }
     p:not(:last-of-type){
       margin-bottom: $size-m;
+    }
+    a{
+      text-decoration: underline;
     }
   }
 }

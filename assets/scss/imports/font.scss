@@ -16,3 +16,16 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
+
+.post{
+    .post-content{
+        .content-overview{
+            #title-overview{
+                list-style: none;
+                margin-bottom: $size-m;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+            }
+        }
+    }
+}

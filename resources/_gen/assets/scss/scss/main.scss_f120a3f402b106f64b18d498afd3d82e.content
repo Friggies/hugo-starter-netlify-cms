@@ -14,6 +14,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400; }
 
+.post .post-content .content-overview #title-overview {
+  list-style: none;
+  margin-bottom: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600; }
+
 * {
   padding: 0;
   margin: 0;
@@ -27,12 +33,12 @@ a, button {
   font-size: inherit;
   text-decoration: none; }
 
+:root {
+  scroll-behavior: smooth; }
+
 body {
   color: #e6e6e6;
   background-color: #1a1a1a; }
-
-main {
-  min-height: calc(100vh - 60px); }
 
 .cta-primary {
   background-color: #4d4d4d;
@@ -100,8 +106,19 @@ main {
     padding: 2rem;
     max-width: 70%;
     margin: auto; }
+    .post .post-content .content-overview {
+      color: #999999; }
+      .post .post-content .content-overview #title-overview {
+        list-style: none;
+        margin-bottom: 1rem; }
+        .post .post-content .content-overview #title-overview li a {
+          text-decoration: underline; }
+        .post .post-content .content-overview #title-overview li:not(:last-of-type) {
+          margin-bottom: 0.2rem; }
     .post .post-content p:not(:last-of-type) {
       margin-bottom: 1rem; }
+    .post .post-content a {
+      text-decoration: underline; }
 
 .post-snippet {
   display: flex;
