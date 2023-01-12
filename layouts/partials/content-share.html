@@ -1,0 +1,7 @@
+<button class="cta-primary" onclick="navigator.share(
+    {
+    title: '{{ .Title }}',
+    text: '{{ .Params.Preview }}',
+    url: '{{ .Permalink }}'
+  }
+)">Del artikel</button>

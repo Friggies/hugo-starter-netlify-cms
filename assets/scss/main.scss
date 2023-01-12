@@ -98,6 +98,9 @@ body {
     margin: auto;
     .content-overview{
       color: $white-5;
+      p{
+        margin-bottom: $size-xxxs;
+      }
       #title-overview{
         list-style: none;
         margin-bottom: $size-m;
@@ -111,7 +114,7 @@ body {
         }
       }
     }
-    p:not(:last-of-type){
+    p{
       margin-bottom: $size-m;
     }
     a{

@@ -31,7 +31,8 @@ a, button {
   background-color: transparent;
   font-family: inherit;
   font-size: inherit;
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
 
 :root {
   scroll-behavior: smooth; }
@@ -108,6 +109,8 @@ body {
     margin: auto; }
     .post .post-content .content-overview {
       color: #999999; }
+      .post .post-content .content-overview p {
+        margin-bottom: 0.2rem; }
       .post .post-content .content-overview #title-overview {
         list-style: none;
         margin-bottom: 1rem; }
@@ -115,7 +118,7 @@ body {
           text-decoration: underline; }
         .post .post-content .content-overview #title-overview li:not(:last-of-type) {
           margin-bottom: 0.2rem; }
-    .post .post-content p:not(:last-of-type) {
+    .post .post-content p {
       margin-bottom: 1rem; }
     .post .post-content a {
       text-decoration: underline; }
