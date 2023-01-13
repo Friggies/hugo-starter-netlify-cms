@@ -159,9 +159,11 @@ body {
   max-width: 70%;
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   gap: $size-l;
   .post-snippet{
-    width: 50%;
+    width: 47.5%;
     position: relative;
     display: flex;
     flex-direction: column;

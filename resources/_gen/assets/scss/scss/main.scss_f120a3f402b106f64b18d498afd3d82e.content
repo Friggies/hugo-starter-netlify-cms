@@ -143,15 +143,19 @@ body {
       margin-bottom: 1rem; }
     .post .post-content a {
       text-decoration: underline; }
+    .post .post-content h2:not(:first-of-type) {
+      margin-top: 2rem; }
 
 .post-wrapper {
   padding: 2rem;
   max-width: 70%;
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 2rem; }
   .post-wrapper .post-snippet {
-    width: 50%;
+    width: 47.5%;
     position: relative;
     display: flex;
     flex-direction: column; }
