@@ -25,37 +25,12 @@
           max-width: 100%;
         }
       }
-    .post-snippet{
-      padding: 0 $size-xm;
-      position: relative;
-        &:nth-child(even){
-            flex-direction: column-reverse;
-            .post-snippet-content{
-                border-left: none;
-                box-shadow: none;      
-            }
-          }
-        &:nth-child(odd){
-            flex-direction: column-reverse;
-        .post-snippet-content{
-                border-right: none;
-                box-shadow: none;      
-            }
-        }
-        .post-snippet-content{
-            max-width: 100%;
-            width: 100%;
-            padding: $size-xm;
-          }
-          .post-snippet-image-overlay{
-            display: block;
-          }
-        .post-snippet-image{
-            width: 100%;
-            height: 150px;
-        }
-        &:not(:last-of-type){
-          margin-bottom: $size-xm;
-        }
+    .post-wrapper{
+      padding: $size-m $size-xm;
+      max-width: 100%;
+      flex-direction: column;
+      .post-snippet{
+        width: 100%;
+      }
     }
 }

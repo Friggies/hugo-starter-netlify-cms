@@ -32,7 +32,8 @@ a, button {
   font-family: inherit;
   font-size: inherit;
   text-decoration: none;
-  cursor: pointer; }
+  cursor: pointer;
+  display: inline-block; }
 
 :root {
   scroll-behavior: smooth; }
@@ -108,12 +109,16 @@ body {
     max-width: 70%;
     margin: auto; }
     .post .post-content .content-overview {
-      color: #999999; }
-      .post .post-content .content-overview p {
-        margin-bottom: 0.2rem; }
+      color: #b3b3b3;
+      background-color: #333333;
+      padding: 0.8rem 1rem;
+      margin-bottom: 1.2rem; }
+      .post .post-content .content-overview summary {
+        list-style: none; }
+        .post .post-content .content-overview summary::-webkit-details-marker {
+          display: none; }
       .post .post-content .content-overview #title-overview {
-        list-style: none;
-        margin-bottom: 1rem; }
+        list-style: none; }
         .post .post-content .content-overview #title-overview li a {
           text-decoration: underline; }
         .post .post-content .content-overview #title-overview li:not(:last-of-type) {
@@ -123,48 +128,35 @@ body {
     .post .post-content a {
       text-decoration: underline; }
 
-.post-snippet {
+.post-wrapper {
+  padding: 2rem;
+  max-width: 70%;
+  margin: auto;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative; }
-  .post-snippet .post-snippet-content {
-    background-color: #333333;
-    padding: 2rem 3rem;
-    display: block;
-    max-width: 50%; }
-    .post-snippet .post-snippet-content h3 {
-      font-size: 1.4rem; }
-    .post-snippet .post-snippet-content .post-snippet-content-button {
-      margin-top: 1rem; }
-  .post-snippet .post-snippet-image-overlay {
-    background: black;
-    background: linear-gradient(180deg, transparent 80%, #662900 99%);
-    border-bottom: 2px solid #F60;
-    width: calc(100% - 2.4rem);
-    height: 150px;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    display: none; }
-  .post-snippet .post-snippet-image {
-    width: 30%;
-    filter: grayscale(1) brightness(0.5);
-    aspect-ratio: 2;
-    object-fit: cover;
-    object-position: center; }
-  .post-snippet:nth-child(even) {
-    flex-direction: row-reverse; }
-    .post-snippet:nth-child(even) .post-snippet-content {
-      border-left: 2px solid #F60;
-      box-shadow: inset 25px 0 25px -25px #F60; }
-  .post-snippet:nth-child(odd) {
-    flex-direction: row; }
-    .post-snippet:nth-child(odd) .post-snippet-content {
-      border-right: 2px solid #F60;
-      box-shadow: inset -25px 0 25px -25px #F60; }
-  .post-snippet:not(:last-of-type) {
-    margin-bottom: 2rem; }
+  gap: 2rem; }
+  .post-wrapper .post-snippet {
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column; }
+    .post-wrapper .post-snippet .post-snippet-image-overlay {
+      height: 200px;
+      width: 100%;
+      position: absolute;
+      background: linear-gradient(180deg, transparent 85%, #4d1f00 100%);
+      z-index: 1; }
+    .post-wrapper .post-snippet .post-snippet-image {
+      width: 100%;
+      filter: grayscale(1) brightness(0.5);
+      height: 200px;
+      object-fit: cover;
+      object-position: center; }
+    .post-wrapper .post-snippet .post-snippet-content {
+      background-color: #333333;
+      padding: 1rem;
+      border-top: 2px solid #F60; }
+      .post-wrapper .post-snippet .post-snippet-content .cta-primary {
+        margin-top: 0.8rem; }
 
 @media screen and (max-width: 800px) {
   #site-header nav {
@@ -182,27 +174,9 @@ body {
   .post .post-content {
     padding: 1rem 1.2rem;
     max-width: 100%; }
-  .post-snippet {
-    padding: 0 1.2rem;
-    position: relative; }
-    .post-snippet:nth-child(even) {
-      flex-direction: column-reverse; }
-      .post-snippet:nth-child(even) .post-snippet-content {
-        border-left: none;
-        box-shadow: none; }
-    .post-snippet:nth-child(odd) {
-      flex-direction: column-reverse; }
-      .post-snippet:nth-child(odd) .post-snippet-content {
-        border-right: none;
-        box-shadow: none; }
-    .post-snippet .post-snippet-content {
-      max-width: 100%;
-      width: 100%;
-      padding: 1.2rem; }
-    .post-snippet .post-snippet-image-overlay {
-      display: block; }
-    .post-snippet .post-snippet-image {
-      width: 100%;
-      height: 150px; }
-    .post-snippet:not(:last-of-type) {
-      margin-bottom: 1.2rem; } }
+  .post-wrapper {
+    padding: 1rem 1.2rem;
+    max-width: 100%;
+    flex-direction: column; }
+    .post-wrapper .post-snippet {
+      width: 100%; } }

@@ -1,25 +1,27 @@
 {{ partial "header.html" . }}
 
-<br><br>
+<div class="post-wrapper">
 
-{{ range.Data.Pages }}
-<article class="post-snippet">
+  {{ range.Data.Pages }}
+  <article class="post-snippet">
+  
+    <div class="post-snippet-image-overlay"></div>
+  
+    <img src="{{ .Params.image }}" class="post-snippet-image">
 
-  <a class="post-snippet-content" href="{{ .RelPermalink }}">
+    <div class="post-snippet-content" href="{{ .RelPermalink }}">
+  
+      <h3>{{ .Title }}</h3>
+  
+      <p>{{ .Params.Preview }}</p>
+  
+      <a class="cta-primary" href="{{ .RelPermalink }}">Læs mere</a>
+  
+    </div>
+  
+  </article>
+  {{ end }}
 
-    <h3>{{ .Title }}</h3>
-
-    <p>{{ .Params.Preview }}</p>
-
-    <p class="cta-primary post-snippet-content-button">Læs mere</p>
-
-  </a>
-
-  <div class="post-snippet-image-overlay"></div>
-
-  <img src="{{ .Params.image }}" class="post-snippet-image">
-
-</article>
-{{ end }}
+</div>
 
 {{ partial "footer.html" . }}

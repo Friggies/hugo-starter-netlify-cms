@@ -97,13 +97,18 @@ body {
     max-width: 70%;
     margin: auto;
     .content-overview{
-      color: $white-5;
-      p{
-        margin-bottom: $size-xxxs;
+      color: $white-4;
+      background-color: $black-3;
+      padding: $size-s $size-m;
+      margin-bottom: $size-xm;
+      summary{
+        list-style: none;
+        &::-webkit-details-marker {
+          display:none;
+        }      
       }
       #title-overview{
         list-style: none;
-        margin-bottom: $size-m;
         li{
           a{
             text-decoration: underline;
@@ -122,57 +127,40 @@ body {
     }
   }
 }
-.post-snippet{
+.post-wrapper{
+  padding: $size-l;
+  max-width: 70%;
+  margin: auto;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  .post-snippet-content{
-    background-color: $black-3;
-    padding: $size-l $size-xl;
-    display: block;
-    max-width: 50%;
-    h3{
-      font-size: $size-xxm;
+  gap: $size-l;
+  .post-snippet{
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    .post-snippet-image-overlay{
+      height: 200px;
+      width: 100%;
+      position: absolute;
+      background: linear-gradient(180deg, transparent 85%, darken($brand-1, 35) 100%);
+      z-index: 1;
+
     }
-    .post-snippet-content-button{
-      margin-top: $size-m;
+    .post-snippet-image{
+      width: 100%;
+      filter: $dark-filter;
+      height: 200px;
+      object-fit: cover;
+      object-position: center;
     }
-  }
-  .post-snippet-image-overlay{
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, transparent 80%, darken($brand-1, 30) 99%);
-    border-bottom: 2px solid $brand-1;
-    width: calc(100% - 2.4rem);
-    height: 150px;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    display: none;
-  }
-  .post-snippet-image{
-    width: 30%;
-    filter: $dark-filter;
-    aspect-ratio: 2;
-    object-fit: cover;
-    object-position: center;
-  }
-  &:nth-child(even){
-    flex-direction: row-reverse;
     .post-snippet-content{
-      border-left: 2px solid $brand-1;
-      box-shadow: inset 25px 0 25px -25px $brand-1;
+      background-color: $black-3;
+      padding: $size-m;
+      border-top: 2px solid $brand-1;
+      .cta-primary{
+        margin-top: $size-s
+      }
     }
-  }
-  &:nth-child(odd){
-    flex-direction: row;
-    .post-snippet-content{
-      border-right: 2px solid $brand-1;
-      box-shadow: inset -25px 0 25px -25px $brand-1;
-    }
-  }
-  &:not(:last-of-type){
-    margin-bottom: $size-l;
   }
 }
 
