@@ -15,8 +15,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
 
 .post .post-content .content-overview #title-overview {
-  list-style: none;
-  margin-bottom: 1rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600; }
 
@@ -114,15 +112,32 @@ body {
       padding: 0.8rem 1rem;
       margin-bottom: 1.2rem; }
       .post .post-content .content-overview summary {
-        list-style: none; }
-        .post .post-content .content-overview summary::-webkit-details-marker {
-          display: none; }
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        touch-action: manipulation;
+        cursor: pointer;
+        user-select: none; }
+        .post .post-content .content-overview summary span {
+          line-height: 1rem;
+          font-size: 1.4rem;
+          color: #F60; }
+        .post .post-content .content-overview summary::-webkit-details-marker, .post .post-content .content-overview summary::marker {
+          appearance: none; }
+      .post .post-content .content-overview .content-overview-open {
+        display: none; }
+      .post .post-content .content-overview .content-overview-closed {
+        display: block; }
+      .post .post-content .content-overview[open] .content-overview-open {
+        display: block; }
+      .post .post-content .content-overview[open] .content-overview-closed {
+        display: none; }
       .post .post-content .content-overview #title-overview {
         list-style: none; }
         .post .post-content .content-overview #title-overview li a {
-          text-decoration: underline; }
-        .post .post-content .content-overview #title-overview li:not(:last-of-type) {
-          margin-bottom: 0.2rem; }
+          text-decoration: underline;
+          margin-top: 0.2rem; }
     .post .post-content p {
       margin-bottom: 1rem; }
     .post .post-content a {

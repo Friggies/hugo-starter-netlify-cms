@@ -103,18 +103,41 @@ body {
       margin-bottom: $size-xm;
       summary{
         list-style: none;
-        &::-webkit-details-marker {
-          display:none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        touch-action: manipulation;
+        cursor: pointer;
+        user-select: none;
+        span{
+          line-height: $size-m;
+          font-size: $size-xxm;
+          color: $brand-1;
+        }
+        &::-webkit-details-marker, &::marker {
+          appearance: none;
         }      
+      }
+      .content-overview-open{
+        display: none;
+      }
+      .content-overview-closed{
+        display: block;
+      }
+      &[open]{
+        .content-overview-open{
+          display: block;
+        }
+        .content-overview-closed{
+          display: none;
+        }
       }
       #title-overview{
         list-style: none;
         li{
           a{
             text-decoration: underline;
-          }
-          &:not(:last-of-type){
-            margin-bottom: $size-xxxs;
+            margin-top: $size-xxxs;
           }
         }
       }
