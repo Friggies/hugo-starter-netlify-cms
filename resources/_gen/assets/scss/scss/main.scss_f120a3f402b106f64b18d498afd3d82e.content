@@ -124,7 +124,8 @@ body {
           font-size: 1.4rem;
           color: #F60; }
         .post .post-content .content-overview summary::-webkit-details-marker, .post .post-content .content-overview summary::marker {
-          appearance: none; }
+          appearance: none;
+          display: none; }
       .post .post-content .content-overview .content-overview-open {
         display: none; }
       .post .post-content .content-overview .content-overview-closed {
