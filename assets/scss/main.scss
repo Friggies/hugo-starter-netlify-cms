@@ -149,6 +149,9 @@ body {
     a{
       text-decoration: underline;
     }
+    h2:not(:first-of-type) {
+      margin-top: $size-l;
+    }
   }
 }
 .post-wrapper{
