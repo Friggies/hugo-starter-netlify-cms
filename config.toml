@@ -2,11 +2,6 @@ title = "FRIGGIES"
 
 [menu]
   [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about"
-    weight = 1
-  [[menu.main]]
     identifier = "blog"
     name = "Blog"
     url = "/blog"

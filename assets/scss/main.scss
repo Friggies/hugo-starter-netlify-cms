@@ -72,10 +72,13 @@ body {
       font-size: $size-m;
       font-style: italic;
       letter-spacing: 0.2px;
-      color: $white-3;
+      color: $white-2;
       border-left: 2px solid $brand-1;
-      padding-left: $size-s;
+      padding: $size-s;
       margin-top: $size-s;
+      background: rgba(0, 0, 0, 0.1);
+      background: radial-gradient(circle, rgba(0, 0, 0, 0.2) 1%, transparent 100%);
+      width: fit-content;
       .lowercase{
         text-transform: lowercase;
       }

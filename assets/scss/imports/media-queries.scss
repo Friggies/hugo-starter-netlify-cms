@@ -1,4 +1,7 @@
 @media screen and (max-width:800px) {
+  body{
+    font-size: $size-xm;
+  }
     #site-header{
         nav{
             padding: $size-m $size-xm;

@@ -1,6 +1,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  font-size: 1rem; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
@@ -86,10 +87,13 @@ body {
       font-size: 1rem;
       font-style: italic;
       letter-spacing: 0.2px;
-      color: #cccccc;
+      color: #e6e6e6;
       border-left: 2px solid #F60;
-      padding-left: 0.8rem;
-      margin-top: 0.8rem; }
+      padding: 0.8rem;
+      margin-top: 0.8rem;
+      background: rgba(0, 0, 0, 0.1);
+      background: radial-gradient(circle, rgba(0, 0, 0, 0.2) 1%, transparent 100%);
+      width: fit-content; }
       .post .post-header .post-info .lowercase {
         text-transform: lowercase; }
     .post .post-header .post-image {
@@ -179,6 +183,8 @@ body {
         margin-top: 0.8rem; }
 
 @media screen and (max-width: 800px) {
+  body {
+    font-size: 1.2rem; }
   #site-header nav {
     padding: 1rem 1.2rem; }
     #site-header nav #lettermark {
