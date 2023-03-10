@@ -11,6 +11,10 @@ preview: Diam in arcu cursus euismod quis viverra. Urna molestie at elementum eu
   at auctor urna nunc id. Nec feugiat nisl pretium fusce id velit. Lectus quam
   id leo in vitae. Eget est lorem ipsum dolor. Sed cras ornare arcu dui vivamus.
   Non arcu risus quis varius quam quisque id diam vel.
+tags:
+- lorem
+categories:
+- fitness
 ---
 ## Overskrift 1
 

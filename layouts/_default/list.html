@@ -4,12 +4,9 @@
 
   {{ range.Data.Pages }}
   <article class="post-snippet">
-  
     <div class="post-snippet-image-overlay"></div>
-  
-    <img src="{{ .Params.image }}" class="post-snippet-image">
-
-    <div class="post-snippet-content" href="{{ .RelPermalink }}">
+    <img src="{{ .RelPermalink }}/{{ .Params.image }}" class="post-snippet-image">
+    <div class="post-snippet-content">
   
       <h3>{{ .Title }}</h3>
   
@@ -23,5 +20,7 @@
   {{ end }}
 
 </div>
+
+
 
 {{ partial "footer.html" . }}

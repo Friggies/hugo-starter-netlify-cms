@@ -1,4 +1,4 @@
 ---
-title: "Blog"
+title: "Alle artikler"
 visible: false
 ---

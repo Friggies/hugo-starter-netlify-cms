@@ -1,0 +1,31 @@
+#site-header{
+    background-color: $black-1;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: $size-l;
+        text-transform: uppercase;
+        #lettermark{
+          font-weight: 800;
+          font-size: $size-l;
+        }
+        .menu{
+            display: flex;
+            gap: $size-m;
+            list-style-type: none;
+            font-size: $size-xm;
+            li{
+                a{
+                  transition: color $default-transition;
+                }
+                &:hover{
+                  a {
+                    color: $brand-1;
+                    transition: color $default-transition;
+                  }
+                }
+            }
+        }
+    }
+  }

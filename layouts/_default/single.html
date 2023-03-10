@@ -7,9 +7,7 @@
 		<h1 class="post-title">{{ .Title }}</h1>
 
 		<div class="post-info">
-			
-			<p>Skrevet af {{ .Params.Author }}</p>
-			
+						
 			{{ if eq (.PublishDate.Format "2006-01-02") (.Lastmod.Format "2006-01-02") }}
 				<p>Publiceret <span class="lowercase">{{ .PublishDate.Format "Jan. 2006" }}</span></p>
 			{{ else }}
@@ -32,6 +30,13 @@
 		
 		{{ partial "content-share.html" }}
 
+		<h5>Udforsk andre tags:</h5>
+		<ul>
+			{{ range (.GetTerms "tags") }}
+				<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+			{{ end }}
+		</ul>
+	
 	</div>
 
 </article>

@@ -34,44 +34,6 @@ a, button {
   cursor: pointer;
   display: inline-block; }
 
-:root {
-  scroll-behavior: smooth; }
-
-body {
-  color: #e6e6e6;
-  background-color: #1a1a1a; }
-
-.cta-primary {
-  background-color: #4d4d4d;
-  width: fit-content;
-  padding: 0.4rem 1rem;
-  text-transform: uppercase; }
-
-#site-header {
-  background-color: black; }
-  #site-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem; }
-    #site-header nav #lettermark {
-      font-weight: 800;
-      font-size: 2rem; }
-    #site-header nav .menu {
-      display: flex;
-      gap: 1rem;
-      list-style-type: none;
-      font-size: 1.2rem; }
-      #site-header nav .menu li a {
-        transition: color 200ms ease; }
-      #site-header nav .menu li:hover a {
-        color: #F60;
-        transition: color 200ms ease; }
-
-#site-footer {
-  padding: 2rem;
-  background-color: black; }
-
 .post {
   border-bottom: 2px solid #333333; }
   .post .post-header {
@@ -149,6 +111,45 @@ body {
       text-decoration: underline; }
     .post .post-content h2:not(:first-of-type) {
       margin-top: 2rem; }
+
+#site-header {
+  background-color: black; }
+  #site-header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    text-transform: uppercase; }
+    #site-header nav #lettermark {
+      font-weight: 800;
+      font-size: 2rem; }
+    #site-header nav .menu {
+      display: flex;
+      gap: 1rem;
+      list-style-type: none;
+      font-size: 1.2rem; }
+      #site-header nav .menu li a {
+        transition: color 200ms ease; }
+      #site-header nav .menu li:hover a {
+        color: #F60;
+        transition: color 200ms ease; }
+
+#site-footer {
+  padding: 2rem;
+  background-color: black; }
+
+:root {
+  scroll-behavior: smooth; }
+
+body {
+  color: #e6e6e6;
+  background-color: #1a1a1a; }
+
+.cta-primary {
+  background-color: #4d4d4d;
+  width: fit-content;
+  padding: 0.4rem 1rem;
+  text-transform: uppercase; }
 
 .post-wrapper {
   padding: 2rem;

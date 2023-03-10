@@ -3,6 +3,10 @@ title = "FRIGGIES"
 [menu]
   [[menu.main]]
     identifier = "blog"
-    name = "Blog"
+    name = "Artikler"
     url = "/blog"
     weight = 2
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'

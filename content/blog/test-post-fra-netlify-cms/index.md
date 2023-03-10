@@ -9,6 +9,11 @@ preview: Semper viverra nam libero justo laoreet sit amet cursus. Sit amet
   cursus sit amet dictum sit. Gravida dictum fusce ut placerat orci. Convallis a
   cras semper auctor neque vitae tempus quam. Lorem sed risus ultricies
   tristique nulla aliquet enim tortor.
+tags:
+- test
+- lorem
+categories:
+- sundhed
 ---
 ## Overskrift 1
 

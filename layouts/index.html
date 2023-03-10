@@ -4,6 +4,31 @@
 
 <p>{{ .Params.blurb }}</p>
 
+<h2>Seneste artikler</h2>
+{{ range first 3 .Site.RegularPages}}
+  <h3>{{ .Title }}</h2>
+  <a href="{{ .Permalink }}" class="cta-primary">LÆS MERE</a>
+{{end}}
+<h2>Tags</h2>
+{{range $name, $taxonomy := .Site.Taxonomies.tags}} {{ $cnt := .Count }}
+{{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+    <div class="tagbutton">
+  <a href={{ .RelPermalink }} title="All pages with tag <i>{{$name}}</i>">{{$name}}</a>
+  <sup>{{$cnt}}</sup>
+    </div>
+{{end}}
+{{end}}
+<h2>Kategorier</h2>
+{{range $name, $taxonomy := .Site.Taxonomies.categories}} {{ $cnt := .Count }}
+{{ with $.Site.GetPage (printf "/categories/%s" $name) }}
+    <div class="tagbutton">
+  <a href={{ .RelPermalink }} title="All pages with tag <i>{{$name}}</i>">{{$name}}</a>
+  <sup>{{$cnt}}</sup>
+    </div>
+{{end}}
+{{end}}
+
+
 <img src="{{ .Params.header.img }}" alt="">
 
 <h2>{{ .Params.section.heading }}</h2>
